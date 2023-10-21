@@ -14,6 +14,7 @@ public class PlayerCollides : MonoBehaviour
         //change scene to a random one
 
         //change death number, not destroy on load game object with dead count
+        HUD.instance.UpdateDeaths();
 
         //play fmod event
     }
