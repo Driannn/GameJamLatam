@@ -9,7 +9,7 @@ public class PlayerCollides : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // This destroys the object
-        Destroy(gameObject);
+        GameManager.instance.GameOver();
 
         //change scene to a random one
 
