@@ -10,7 +10,14 @@ public class PipeController : MonoBehaviour
     public float rightXBound = 20;
     // The pipe moves this many units per second
     public float speed = -2;
-    
+
+    CompletedPipePositionRandomizer positionRandomizer;
+
+    private void Start()
+    {
+        positionRandomizer = GetComponent<CompletedPipePositionRandomizer>();
+    }
+
     // Update is called once every frame
     public void Update()
     {
@@ -24,6 +31,7 @@ public class PipeController : MonoBehaviour
             Vector3 newPosition = transform.position;
             newPosition.x = rightXBound;
             transform.position = newPosition;
+            positionRandomizer.RandomizeHeight();
         }
     }
 }

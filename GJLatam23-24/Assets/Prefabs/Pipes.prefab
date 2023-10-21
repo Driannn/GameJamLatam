@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8227141494911450510}
   - component: {fileID: 8717450854015680700}
   - component: {fileID: 3407841120844792376}
+  - component: {fileID: 8902712142932054488}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Untagged
@@ -42,12 +43,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995347398290032654}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c10915faa05c48347b8ab3ff2dcee490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftXBound: -10
+  leftXBound: -2
   rightXBound: 20
   speed: -2
 --- !u!114 &3407841120844792376
@@ -57,12 +58,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995347398290032654}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a2ffdc174fbb484f82d91e80a05b2aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3
+  range: 2.5
+--- !u!114 &8902712142932054488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995347398290032654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3278b1fd4ed754546a29e21ba6ca57c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2
 --- !u!1001 &365142712452396525
 PrefabInstance:
   m_ObjectHideFlags: 0
