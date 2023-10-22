@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         _gameOverCanvas.SetActive(true);
         gameOver = true;
+        FlappyMusicManager.Instance.MusicOnPause(1);
         Debug.Log("Game Over: " + gameOver);
         Time.timeScale = 0f;
     }
@@ -48,5 +49,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(index);
 
         FlappyMusicManager.Instance.MusicScene(index);
+        FlappyMusicManager.Instance.NewHighScoreMusic(0);
+        FlappyMusicManager.Instance.MusicOnPause(0);
     }
 }

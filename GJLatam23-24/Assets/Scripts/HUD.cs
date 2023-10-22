@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class HUD : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class HUD : MonoBehaviour
     {
         if (_score > PlayerPrefs.GetInt("HighScore"))
         {
+            FlappyMusicManager.Instance.NewHighScoreMusic(1);
             PlayerPrefs.SetInt("HighScore", _score);
             _highScoreText.text = _score.ToString();
         }

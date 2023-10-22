@@ -34,6 +34,7 @@ public class FlappyMusicManager : MonoBehaviour
 
     public void MusicOnPause(int pause)
     {
+        Debug.Log("Music on pause: " + pause);
         studioEventEmitter.SetParameter("Paused game", pause);
     }
 
@@ -45,6 +46,7 @@ public class FlappyMusicManager : MonoBehaviour
 
     public void NewHighScoreMusic(int newHighScore)
     {
-        studioEventEmitter.SetParameter("Is New High Score", newHighScore);
+        Debug.Log("New High Score Music: " + newHighScore);
+        studioEventEmitter.SetParameter("New High Score", newHighScore);
     }
 }
