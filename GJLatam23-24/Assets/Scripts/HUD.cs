@@ -24,12 +24,17 @@ public class HUD : MonoBehaviour
 
     //this part was made by Copilot within the Edge browser
 
+    public static class GlobalControl
+    {
+        public static int DeathCount = 0;
+    }
+
     void Start()
     {
         _score = 0;
         _currentScoreText.text = _score.ToString();
 
-        _deaths = PlayerPrefs.GetInt("DeathCount", 0);
+        _deaths = GlobalControl.DeathCount;
         _deathCountText.text = _deaths.ToString();
 
         _highScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
@@ -56,9 +61,10 @@ public class HUD : MonoBehaviour
     public void UpdateDeaths()
     {
         _deaths++;
-        PlayerPrefs.SetInt("DeathCount", _deaths);
+        GlobalControl.DeathCount = _deaths;
         _deathCountText.text = _deaths.ToString();
     }
+
 
 
     /*   // Start is called before the first frame update
