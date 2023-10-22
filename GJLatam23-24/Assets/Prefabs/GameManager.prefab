@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstScence: 0
-  lastScence: 1
+  lastScence: 9
   _gameOverCanvas: {fileID: 0}

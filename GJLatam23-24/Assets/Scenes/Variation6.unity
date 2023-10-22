@@ -683,6 +683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2491688456860717353, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
+      propertyPath: jumpSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5390879878432890744, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -694,6 +698,18 @@ PrefabInstance:
     - target: {fileID: 5390879878432890744, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711146893181133170, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.60522467
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711146893181133170, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.60522467
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711146893181133170, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.60522467
       objectReference: {fileID: 0}
     - target: {fileID: 6711146893181133170, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
       propertyPath: m_LocalPosition.x
@@ -788,6 +804,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5005533399740448127, guid: 400d074bf02ad6f4381034bd914214ab, type: 3}
+      propertyPath: _pipe
+      value: 
+      objectReference: {fileID: 995347398290032654, guid: 42e82b6d3cb7aee40860ddb4ed70c258, type: 3}
     - target: {fileID: 6212004599934334620, guid: 400d074bf02ad6f4381034bd914214ab, type: 3}
       propertyPath: m_Name
       value: PipeSpawner
@@ -901,6 +921,22 @@ PrefabInstance:
     - target: {fileID: 4240035227536867395, guid: 1af38e7867ae1544793477d7f2d1b3bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787536237400250926, guid: 1af38e7867ae1544793477d7f2d1b3bf, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787536237400250926, guid: 1af38e7867ae1544793477d7f2d1b3bf, type: 3}
+      propertyPath: m_Color.b
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787536237400250926, guid: 1af38e7867ae1544793477d7f2d1b3bf, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787536237400250926, guid: 1af38e7867ae1544793477d7f2d1b3bf, type: 3}
+      propertyPath: m_Color.r
+      value: 0.93725497
       objectReference: {fileID: 0}
     - target: {fileID: 5636907268182787972, guid: 1af38e7867ae1544793477d7f2d1b3bf, type: 3}
       propertyPath: m_Name
