@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2522814734724536141}
   - component: {fileID: 5577424861641253500}
-  - component: {fileID: 2410734277209487682}
   - component: {fileID: 531569159361913605}
   m_Layer: 0
   m_Name: AudioManager
@@ -46,22 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf67f7fca968544e97e799a945e3a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  studioEventEmitter: {fileID: 0}
+  studioEventEmitter: {fileID: 531569159361913605}
   IsNewHighScore: 0
   ActiveScene: 0
   IsPaused: 0
---- !u!114 &2410734277209487682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6072350144389832958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 950435039380c1d4aa9a68ce0b7d91b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &531569159361913605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +76,13 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: Active Scene
+    Value: 0
+  - Name: New High Score
+    Value: 0
+  - Name: Paused game
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20

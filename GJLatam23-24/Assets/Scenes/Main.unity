@@ -163,22 +163,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
-      propertyPath: Params.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
-      propertyPath: Params.Array.data[0].Name
-      value: Active Scene
-      objectReference: {fileID: 0}
-    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
-      propertyPath: Params.Array.data[1].Name
-      value: New High Score
-      objectReference: {fileID: 0}
-    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
-      propertyPath: Params.Array.data[2].Name
-      value: Paused game
-      objectReference: {fileID: 0}
-    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
       propertyPath: Params.Array.data[0].Value
       value: 0
       objectReference: {fileID: 0}
@@ -220,10 +204,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522814734724536141, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5577424861641253500, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
-      propertyPath: ActiveScene
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6072350144389832958, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}

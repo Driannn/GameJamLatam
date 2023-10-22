@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
-        resetStringEvent = "event:/SFX/restart scene";
         Time.timeScale = 1.0f;
+
     }
 
     // Update is called once per frame
@@ -41,9 +41,12 @@ public class GameManager : MonoBehaviour
         restetSound = FMODUnity.RuntimeManager.CreateInstance(resetStringEvent);
         restetSound.start();
         //reset game to current scene, change it later
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+         
         int index = Random.Range(firstScence, lastScence + 1);
         Debug.Log("Load scene: " + index);
         SceneManager.LoadScene(index);
+
+        FlappyMusicManager.Instance.MusicScene(index);
     }
 }
