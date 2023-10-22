@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 1375952184423878564}
   jumpSpeed: 5
+  jumpStringEvent: event:/SFX/jump
 --- !u!114 &4956926681976491445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,4 +212,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee04cbe36e82cb6458d762775d0d02e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 5
+  _rotationSpeed: 2.5

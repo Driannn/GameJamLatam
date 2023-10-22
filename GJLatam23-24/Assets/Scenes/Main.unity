@@ -162,6 +162,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
+      propertyPath: Params.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
+      propertyPath: Params.Array.data[0].Name
+      value: Active Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
+      propertyPath: Params.Array.data[1].Name
+      value: New High Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
+      propertyPath: Params.Array.data[2].Name
+      value: Paused game
+      objectReference: {fileID: 0}
+    - target: {fileID: 531569159361913605, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2522814734724536141, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17554319
@@ -202,9 +222,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5577424861641253500, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
+      propertyPath: ActiveScene
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6072350144389832958, guid: ed8f9f9f8933707428f6bc44c2ccc777, type: 3}
       propertyPath: m_Name
-      value: AudioManager
+      value: MusicManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -675,25 +699,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1032975788141493698, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
-      propertyPath: _rotationSpeed
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1216594789617243118, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5390879878432890744, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5390879878432890744, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5390879878432890744, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6711146893181133170, guid: 667b8324b7734d143aa8b519bd6ed817, type: 3}
       propertyPath: m_LocalPosition.x

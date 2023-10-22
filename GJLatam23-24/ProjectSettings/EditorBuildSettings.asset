@@ -9,30 +9,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: a1673f2965ad6ce4b87add9ebf783efe
   - enabled: 1
-    path: Assets/Scenes/Variation1.unity
+    path: Assets/Scenes/Variation1-3D not 3D.unity
     guid: d539d8af241c2044a8c534afa601c725
   - enabled: 1
-    path: Assets/Scenes/Variation2.unity
+    path: Assets/Scenes/Variation2-you are the pipe.unity
     guid: 22f18f1c3cea4354f8bc8cbbd3def940
   - enabled: 1
-    path: Assets/Scenes/Variation3.unity
+    path: Assets/Scenes/Variation3-right to left.unity
     guid: 9a6e5df35e1b7ff48af1eae6550b17d3
   - enabled: 1
-    path: Assets/Scenes/Variation4.unity
+    path: Assets/Scenes/Variation4-Bottom to up.unity
     guid: 9c174b06752c63a4480816ee495a6855
   - enabled: 1
-    path: Assets/Scenes/Variation5.unity
+    path: Assets/Scenes/Variation5-top to bottom.unity
     guid: 6fd44cc5141087c4aa4bdbab3d46b651
   - enabled: 1
-    path: Assets/Scenes/Variation6.unity
+    path: Assets/Scenes/Variation6-Big bird.unity
     guid: e02a9731c082723499e61ba61213f99e
   - enabled: 1
-    path: Assets/Scenes/Variation7.unity
+    path: Assets/Scenes/Variation7-POV.unity
     guid: 5c35d45f619fd5940a2665145b6f004e
   - enabled: 1
-    path: Assets/Scenes/Variation8.unity
+    path: Assets/Scenes/Variation8-3D.unity
     guid: 3013b3f760e3ccf47a3fb3169646eafc
   - enabled: 1
-    path: Assets/Scenes/Variation9.unity
+    path: Assets/Scenes/Variation9-Pipe avoid bird.unity
     guid: eca17b64f573ba14fbacfedeabd0b6f7
   m_configObjects: {}

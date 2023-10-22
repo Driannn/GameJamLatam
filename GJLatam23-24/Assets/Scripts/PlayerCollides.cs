@@ -1,3 +1,4 @@
+using FMOD;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,14 +18,10 @@ public class PlayerCollides : MonoBehaviour
         // This destroys the object
         GameManager.instance.GameOver();
 
-        //change scene to a random one
-
         //change death number, not destroy on load game object with dead count
         HUD.instance.UpdateDeaths();
 
         //aniamtion death
         animator.SetBool("IsDead", true);
-
-        //play fmod event
     }
 }

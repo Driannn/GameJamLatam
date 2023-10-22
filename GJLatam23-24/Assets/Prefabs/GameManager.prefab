@@ -46,4 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstScence: 0
   lastScence: 9
+  gameOver: 0
   _gameOverCanvas: {fileID: 0}
+  resetStringEvent: event:/SFX/restart scene

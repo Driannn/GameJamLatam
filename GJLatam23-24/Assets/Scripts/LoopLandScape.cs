@@ -26,7 +26,6 @@ public class LoopLandScape : MonoBehaviour
 
         if (_spriteRenderer.size.x > _width)
         {
-            Debug.Log("if");
             _spriteRenderer.size = _startSize;
         }
     }
