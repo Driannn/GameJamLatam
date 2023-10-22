@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerCollides : MonoBehaviour
 {
+    private Animator animator;
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     //collision player lose
     // This function is automatically called by the Unity engine once a collision is detected
     private void OnCollisionEnter2D(Collision2D collision)
@@ -15,6 +21,9 @@ public class PlayerCollides : MonoBehaviour
 
         //change death number, not destroy on load game object with dead count
         HUD.instance.UpdateDeaths();
+
+        //aniamtion death
+        animator.SetBool("IsDead", true);
 
         //play fmod event
     }

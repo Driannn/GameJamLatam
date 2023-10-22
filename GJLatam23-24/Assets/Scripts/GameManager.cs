@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    [SerializeField] int firstScence = 0;
+    [SerializeField] int lastScence = 1;
 
     [SerializeField] private GameObject _gameOverCanvas;
 
@@ -30,6 +32,9 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         //reset game to current scene, change it later
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   
+        int index = Random.Range(firstScence, lastScence + 1);
+        Debug.Log(index);
+        SceneManager.LoadScene(index);   
     }
 }
