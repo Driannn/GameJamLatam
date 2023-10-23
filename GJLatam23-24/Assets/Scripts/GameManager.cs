@@ -51,5 +51,6 @@ public class GameManager : MonoBehaviour
         FlappyMusicManager.Instance.MusicScene(index);
         FlappyMusicManager.Instance.NewHighScoreMusic(0);
         FlappyMusicManager.Instance.MusicOnPause(0);
+        FlappyMusicManager.Instance.MusicScore(0);
     }
 }
