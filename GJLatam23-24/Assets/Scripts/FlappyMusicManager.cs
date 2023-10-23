@@ -12,6 +12,9 @@ public class FlappyMusicManager : MonoBehaviour
     public int IsNewHighScore = 0;
     public int ActiveScene = 0;
     public int IsPaused = 0;
+    public int ScoreNumber = 0;
+    public int DeathNumber = 0;
+    public int HighScore = 0;
 
     void Awake()
     {
@@ -48,5 +51,22 @@ public class FlappyMusicManager : MonoBehaviour
     {
         Debug.Log("New High Score Music: " + newHighScore);
         studioEventEmitter.SetParameter("New High Score", newHighScore);
+    }
+
+    public void MusicScore(int score)
+    {
+        Debug.Log("Music Score: " + score);
+        studioEventEmitter.SetParameter("Score Number", score);
+    }
+
+    public void MusicDeath(int death)
+    {
+        Debug.Log("Music DeathCount: " + death);
+        studioEventEmitter.SetParameter("Death Number", death);
+    }
+
+    public void CheckHighScore(int score)
+    {
+        studioEventEmitter.SetParameter("High Score", score);
     }
 }

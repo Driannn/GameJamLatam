@@ -50,12 +50,31 @@ public class HUD : MonoBehaviour
             FlappyMusicManager.Instance.NewHighScoreMusic(1);
             PlayerPrefs.SetInt("HighScore", _score);
             _highScoreText.text = _score.ToString();
+
+            //fmod
+            int highScore = PlayerPrefs.GetInt("HighScore");
+            if (highScore > 10)
+            {
+                FlappyMusicManager.Instance.CheckHighScore(10);
+            }
+            else
+            {
+                FlappyMusicManager.Instance.CheckHighScore(PlayerPrefs.GetInt("HighScore"));
+            }
         }
     }
 
     public void UpdateScore()
     {
         _score++;
+        if (_score < 20)
+        {
+            FlappyMusicManager.Instance.MusicScore(_score);
+        }
+        else
+        {
+            FlappyMusicManager.Instance.MusicScore(20);
+        }
         _currentScoreText.text = _score.ToString();
         UpdateHighScore();
     }
@@ -63,6 +82,7 @@ public class HUD : MonoBehaviour
     public void UpdateDeaths()
     {
         _deaths++;
+        FlappyMusicManager.Instance.MusicDeath(_deaths);
         GlobalControl.DeathCount = _deaths;
         _deathCountText.text = _deaths.ToString();
     }

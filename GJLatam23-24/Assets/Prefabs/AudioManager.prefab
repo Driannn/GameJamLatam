@@ -49,6 +49,9 @@ MonoBehaviour:
   IsNewHighScore: 0
   ActiveScene: 0
   IsPaused: 0
+  ScoreNumber: 0
+  DeathNumber: 0
+  HighScore: 0
 --- !u!114 &531569159361913605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +85,12 @@ MonoBehaviour:
   - Name: New High Score
     Value: 0
   - Name: Paused game
+    Value: 0
+  - Name: Score Number
+    Value: 0
+  - Name: Death Number
+    Value: 0
+  - Name: High Score
     Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
