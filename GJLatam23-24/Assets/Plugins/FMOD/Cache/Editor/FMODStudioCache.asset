@@ -15,8 +15,32 @@ MonoBehaviour:
   Path: FMODBanks/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638334972120000000
+  lastModified: 638336123640000000
   FileSizes: []
+  Exists: 1
+--- !u!114 &-6798940369370940051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/High Score
+  m_EditorClassIdentifier: 
+  Name: High Score
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 376425909
+    data2: 1112630264
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-6674960922689635138
 MonoBehaviour:
@@ -38,6 +62,39 @@ MonoBehaviour:
     Data4: 933251165
   Banks:
   - {fileID: -7383133930194837124}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3349544759470286958}
+  - {fileID: 1313645563512988393}
+  - {fileID: -498222875750671790}
+  - {fileID: 7832250814456504099}
+  - {fileID: 2970905458663548910}
+  - {fileID: -6798940369370940051}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 83077
+--- !u!114 &-4713353733414848857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/restart scene
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/restart scene
+  Guid:
+    Data1: 1332951965
+    Data2: 1146308765
+    Data3: -1948960865
+    Data4: -599016482
+  Banks:
+  - {fileID: -7383133930194837124}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -45,6 +102,93 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3865197472984201599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/jump
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/jump
+  Guid:
+    Data1: 6103338
+    Data2: 1252000201
+    Data3: 58872450
+    Data4: -1680990072
+  Banks:
+  - {fileID: -7383133930194837124}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3349544759470286958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/Active Scene
+  m_EditorClassIdentifier: 
+  Name: Active Scene
+  StudioPath: 
+  Min: 0
+  Max: 9
+  Default: 0
+  ID:
+    data1: 1759217021
+    data2: 3799297808
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  Exists: 1
+--- !u!114 &-498222875750671790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/New High Score
+  m_EditorClassIdentifier: 
+  Name: New High Score
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3293637636
+    data2: 2960309836
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - False
+  - True
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,13 +207,43 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 6386779317810757320}
   - {fileID: -6674960922689635138}
+  - {fileID: -3865197472984201599}
+  - {fileID: 5449147863124554989}
+  - {fileID: 5356161604353902650}
+  - {fileID: -4713353733414848857}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7383133930194837124}
   StringsBanks:
   - {fileID: 1911370597098950516}
-  cacheTime: 638334972120000000
+  cacheTime: 638336123640000000
   cacheVersion: 131608
+--- !u!114 &1313645563512988393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/Paused game
+  m_EditorClassIdentifier: 
+  Name: Paused game
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3246628718
+    data2: 3876241329
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - False
+  - True
+  Exists: 1
 --- !u!114 &1911370597098950516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,11 +259,89 @@ MonoBehaviour:
   Path: FMODBanks/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638334972120000000
+  lastModified: 638336123640000000
   FileSizes:
   - Name: 
-    Value: 806
+    Value: 1324
   Exists: 1
+--- !u!114 &2970905458663548910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/Death Number
+  m_EditorClassIdentifier: 
+  Name: Death Number
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 2797140069
+    data2: 579045914
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5356161604353902650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/score
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/score
+  Guid:
+    Data1: -1693421196
+    Data2: 1207397337
+    Data3: -279971926
+    Data4: -1113270904
+  Banks:
+  - {fileID: -7383133930194837124}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5449147863124554989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/collisions
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/collisions
+  Guid:
+    Data1: -440527037
+    Data2: 1156654567
+    Data3: -30757473
+    Data4: 356843398
+  Banks:
+  - {fileID: -7383133930194837124}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6386779317810757320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,4 +368,28 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 500
+--- !u!114 &7832250814456504099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/Score Number
+  m_EditorClassIdentifier: 
+  Name: Score Number
+  StudioPath: 
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 1435460806
+    data2: 3016781820
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

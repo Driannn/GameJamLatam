@@ -14,18 +14,32 @@ public class PlayerController : MonoBehaviour
     // Impulse strength that can be configured via Unity Editor
     public float jumpSpeed = 5;
 
+    //FMOD
+    FMOD.Studio.EventInstance jumpSound;
+    [SerializeField] string jumpStringEvent = "event:/SFX/jump";
+
+
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("click 0");
+            Debug.Log("click");
         }
 
         // an if statement! It will only run the code inside its body if one of the conditions inside it is true.
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if ( Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
+
             // If we press a jump button, set player's velocity to up
             body.velocity = Vector2.up * jumpSpeed;
+            if(GameManager.instance.gameOver == false)
+            {
+                //play fmod event
+                jumpSound = FMODUnity.RuntimeManager.CreateInstance(jumpStringEvent);
+                jumpSound.start();
+
+            }
         }
     }
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8244627240383631213}
   - component: {fileID: 4571406516437715686}
   - component: {fileID: 325814692463724902}
+  - component: {fileID: 4990600776021342528}
   m_Layer: 0
   m_Name: LimitUpper
   m_TagString: Untagged
@@ -130,6 +131,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4990600776021342528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771433961427249440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -440527037
+      Data2: 1156654567
+      Data3: -30757473
+      Data4: 356843398
+    Path: event:/SFX/collisions
+  Event: 
+  PlayEvent: 9
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6699802467005918456
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,6 +173,7 @@ GameObject:
   - component: {fileID: 3001693523522341977}
   - component: {fileID: 3242695635313867915}
   - component: {fileID: 1807553215683161709}
+  - component: {fileID: 2982054020454271161}
   m_Layer: 0
   m_Name: LimitBottom
   m_TagString: Untagged
@@ -260,6 +293,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2982054020454271161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6699802467005918456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -440527037
+      Data2: 1156654567
+      Data3: -30757473
+      Data4: 356843398
+    Path: event:/SFX/collisions
+  Event: 
+  PlayEvent: 9
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8105953757603659783
 GameObject:
   m_ObjectHideFlags: 0

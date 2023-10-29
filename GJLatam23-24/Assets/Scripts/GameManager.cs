@@ -6,8 +6,15 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    [SerializeField] int firstScence = 0;
+    [SerializeField] int lastScence = 1;
+    public bool gameOver = false;
 
     [SerializeField] private GameObject _gameOverCanvas;
+
+    //FMOD
+    FMOD.Studio.EventInstance restetSound;
+    [SerializeField] string resetStringEvent = "event:/SFX/restart scene";
 
     private void Awake()
     {
@@ -15,21 +22,35 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
-
         Time.timeScale = 1.0f;
+
     }
 
     // Update is called once per frame
     public void GameOver()
     {
         _gameOverCanvas.SetActive(true);
-        
+        gameOver = true;
+        FlappyMusicManager.Instance.MusicOnPause(1);
+        Debug.Log("Game Over: " + gameOver);
         Time.timeScale = 0f;
     }
 
     public void ResetGame()
     {
+        //play fmod event
+        restetSound = FMODUnity.RuntimeManager.CreateInstance(resetStringEvent);
+        restetSound.start();
         //reset game to current scene, change it later
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+         
+        int index = Random.Range(firstScence, lastScence + 1);
+        Debug.Log("Load scene: " + index);
+        SceneManager.LoadScene(index);
+
+        FlappyMusicManager.Instance.MusicScene(index);
+        FlappyMusicManager.Instance.NewHighScoreMusic(0);
+        FlappyMusicManager.Instance.MusicOnPause(0);
+        FlappyMusicManager.Instance.MusicScore(0);
     }
 }
